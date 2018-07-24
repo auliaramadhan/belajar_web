@@ -1,0 +1,43 @@
+/* less-watch-compiler less[folder] css[tujuan] */
+body {
+  font-family: Tahoma;
+  background: #f2f2f2;
+  line-height: 2em;
+}
+h1,
+h3 {
+  border-top: 1px dotted #000;
+  border-bottom: 2px solid #000;
+}
+.primary-text {
+  color: #3b5998;
+  text-decoration: none;
+}
+.btn,
+.primary-btn {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 30px;
+}
+.primary-btn {
+  background: #3b5998;
+  color: #fff;
+}
+ul#menu {
+  list-style: none;
+  background-color: #d9f8f6;
+}
+ul#menu li {
+  padding: 10px 0;
+}
+ul#menu li a {
+  color: #20b2aa;
+  text-decoration: none;
+}
+ul#menu li a:hover {
+  color: #000;
+}
+.bordered {
+  border-top: 1px dotted #000;
+  border-bottom: 2px solid #000;
+}
