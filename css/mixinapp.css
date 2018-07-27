@@ -1,0 +1,32 @@
+/* PLUGINS */
+/* BASE STYLES */
+body {
+  font-family: Georgia, Times, serif;
+  font-size: 18px;
+  background: #c69; }
+
+/* LAYOUTS */
+.container {
+  width: 768px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: white; }
+
+/* MODULES */
+.box {
+  height: 100px;
+  width: 100px;
+  background: #003366;
+  display: inline-block;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-box-shadow: 0 5px #555;
+  -moz-box-shadow: 0 5px #555;
+  box-shadow: 0 5px #555;
+  background: #036;
+  background: -webkit-linear-gradient(orangered, yellow);
+  background: -moz-linear-gradient(orangered, yellow);
+  background: -o-linear-gradient(orangered, yellow);
+  background: linear-gradient(orangered, yellow); }
