@@ -1,11 +1,14 @@
 // COMMON
 
 body
+  font-family: $helvetica
   font-size: $base-size
-  background: $pink
+  background: #c69
 
 .brand
-  background: center no-repeat
+  +hide-text
+  // +retina("../img/bourbon-logo", 300px 200px)
+  background: center
   height: 56px
   margin: $gutter auto
 
@@ -16,7 +19,8 @@ h2
 
 h3
   @extend h2
-  color: $teal
+  color: white
+  background: tint($blue, 20%)
   padding: 10px 0
   font-size: $base-size * 1.4
   text-transform: uppercase
@@ -24,3 +28,6 @@ h3
 footer
   text-align: center
   color: lighten($pink, 15%)
+
+section
+  +clearfix

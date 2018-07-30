@@ -1,6 +1,9 @@
 // THE SASS COURSE • @bradhussey
 // =============================
 
+@import "0-plugins/bourbon";
+
+
 
 // VARIABLES
 $black: #333;
@@ -36,7 +39,7 @@ body{
     font-family: $font-stack;
     background: $pale;
     color: $black;
-    font-style: $font-size;
+    font-style: $font-stack;
 }
 article{
     background: #fff;

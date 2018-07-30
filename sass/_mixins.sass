@@ -1,5 +1,20 @@
 // GLOBAL MIXINS
 
+=boxBorder($rad, $shadow, $grad1, $grad2)
+    border-radius:          $rad
+    -webkit-border-radius:  $rad
+    -moz-border-radius:     $rad
+
+    -webkit-box-shadow: 0 5px $shadow
+    -moz-box-shadow:    0 5px $shadow
+    box-shadow:         0 5px $shadow
+
+    background: #036
+    background: -webkit-linear-gradient($grad1, $grad2)
+    background: -moz-linear-gradient($grad1, $grad2)
+    background: -o-linear-gradient($grad1, $grad2)
+    background: linear-gradient($grad1, $grad2)
+
 =cascade($colour)
   position: relative
   &::before
@@ -13,3 +28,8 @@
     background: darken($colour, 10%)
 
     box-shadow: -10px 10px 0 darken($colour, 5%)
+
+=retina
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)
+    @content
+
