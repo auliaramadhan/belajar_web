@@ -1,5 +1,8 @@
 @mixin easeOut {
-   transition: all 2s ease-out;
+   transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -webkit-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
 }
 
 @mixin background {

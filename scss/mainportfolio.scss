@@ -1,9 +1,14 @@
-@import "mixins";
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url("../img/bourbon-logo.png");
 $background-opaity: 0.9;
+@import "mixins";
+@import "menu";
+* {
+   box-sizing: border-box;
+}
+
 body {
    @include background;
    background: $primary-color;
