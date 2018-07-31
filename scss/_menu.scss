@@ -57,17 +57,15 @@
       &.show {
          transform: translate3d(0, 0, 0);
       }
-   }
-
-   // branding
-   &-branding{
+   } // branding
+   &-branding {
       background: $primary-color;
       transform: translate3d(0, 100vh, 0);
       @include easeOut;
       &.show {
          transform: translate3d(0, 0, 0);
       }
-      .potrait{
+      .potrait {
          width: 250px;
          height: 250px;
          background: url('../img/potrait.jpg');
@@ -75,20 +73,17 @@
          border: 1px solid $secondary-color;
       }
    }
-
-   .nav-item{
+   .nav-item {
       transform: translate3d(600px, 0, 0);
       @include easeOut;
-      &.show{
+      &.show {
          transform: translate3d(0, 0, 0);
       }
-
-      &.current > a{
+      &.current>a {
          color: $secondary-color;
       }
    }
-
-   .nav-link{
+   .nav-link {
       display: inline-block;
       position: relative;
       font-size: 3px;
@@ -98,17 +93,14 @@
       text-decoration: none;
       color: #fff;
       @include easeOut;
-      &:hover{
+      &:hover {
          color: $secondary-color;
       }
    }
-
 }
 
-
-
-@for $x from 1 to 4 {
-   .nav-item:nth-child(#{$x}){
+@for $x from 1 to 5 {
+   .nav-item:nth-child(#{$x}) {
       transition-delay: $x * 0.1s;
    }
 }

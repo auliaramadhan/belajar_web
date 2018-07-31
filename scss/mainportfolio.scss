@@ -5,6 +5,7 @@ $home-image: url("../img/bourbon-logo.png");
 $background-opaity: 0.9;
 @import "mixins";
 @import "menu";
+@import "mobile";
 * {
    box-sizing: border-box;
 }
@@ -69,4 +70,9 @@ main {
          margin-top: 20vh;
       }
    }
+}
+
+.fab {
+   font-size: 3rem;
+   margin: 0 10px;
 }
