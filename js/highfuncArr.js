@@ -97,9 +97,9 @@ const companies= [
   // const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
   
   // Sort ages
-  // const sortAges = ages.sort((a, b) => a - b);
-  
-  // console.log(sortAges);
+  const sortAges = ages.sort((a, b) => a - b);
+  // 
+  console.log(sortAges);
   
   
   // reduce
