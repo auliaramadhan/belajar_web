@@ -1,27 +1,45 @@
 {
-  "name": "belajar-web",
-  "version": "1.0.0",
-  "description": "belajar-web",
-  "main": "index.js",
+  "name": "app-name",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/auliaramadhan/belajar_web.git"
-  },
-  "author": "Aulia Ramadhan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/auliaramadhan/belajar_web/issues"
-  },
-  "homepage": "https://github.com/auliaramadhan/belajar_web#readme",
   "dependencies": {
-    "babel": "^6.23.0",
-    "node-sass": "^4.9.2",
     "vee-validate": "^2.1.0-beta.7",
     "vue": "^2.5.17",
-    "vue-cli": "^2.9.6"
-  }
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.11",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.11",
+    "@vue/cli-service": "^3.0.0-rc.11",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
