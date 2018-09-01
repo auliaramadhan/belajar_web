@@ -4,9 +4,7 @@
     <p>{{name}}</p>
     <!-- {{ btnState ? 'button is disabled' : 'button active'}}
     <button v-on:click="changeName" 
-    v-bind:disabled="btnState">Button</button>
-
--->
+    v-bind:disabled="btnState">Button</button> -->
     <!-- <div v-bind:class="{ alert: showAlert, 'another-class':showClass}"></div>
     <div v-bind:style="{ backgroundColor: bgColor, width: bgWidth, height: bgHeight}"></div> -->
 

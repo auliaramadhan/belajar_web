@@ -7,7 +7,7 @@
     <p v-if="showLastName">{{user.lastname}}</p>
     <p v-else>Nobody</p>
     <ul>
-      <li v-for="item in items">{{item.title}}</li>
+      <li v-for="item in items" :key="item">{{item.title}}</li>
     </ul>
     <button v-on:click="greet('hello')">click me</button>
     <input type="text" v-on:keyup="presskey" v-on:keyup.enter="enterHit">

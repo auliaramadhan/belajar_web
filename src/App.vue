@@ -1,21 +1,27 @@
 // vue create
 <template>
   <div id="app">
-    <nav>
+    <!-- <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-    </nav>
-  <router-view />
+    </nav> -->
+    <Test></Test>
+  <!-- <router-view /> -->
+  <!-- ini gunanya apa sih router view -->
   </div>
 </template>
 
 <script>
-import Skills from "./components/Skills.vue";
+// import Skills from "./components/Skills.vue";
+import Test from './components/Test'
+// import Users from './components/User'
 
 export default {
   name: "app",
   components: {
-    Skills
+    // Skills
+    Test
+    // Users
   }
 };
 </script>

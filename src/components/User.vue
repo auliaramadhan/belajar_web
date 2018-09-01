@@ -10,7 +10,7 @@
         <input type="submit" value="Submit">
       </form>
       <ul>
-        <li v-for="user in users">
+        <li v-for="user in users" :key="user">
           <input type="checkbox" class='toggle' v-model="user.contacted">
           <span :class="{contacted: user.contacted}">
             {{user.name}} : {{user.email}} 
