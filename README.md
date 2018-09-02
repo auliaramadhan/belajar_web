@@ -14,6 +14,16 @@ cara launch make chrome debugger
     "file": "${workspaceFolder}/indexjs.html"
 }
 ```
+launch lewat chrome debugger
+```javascript
+{
+    "type": "chrome",
+    "request": "launch",
+    "name": "Launch Chrome",
+    "url": "http://localhost:8080",
+    "file": "${workspaceFolder}/indexjs.html"
+},
+```
 cara debug pake nodemon
 ```javascript
 "scripts": {
