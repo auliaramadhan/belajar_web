@@ -14,4 +14,19 @@ cara launch make chrome debugger
     "file": "${workspaceFolder}/indexjs.html"
 }
 ```
+cara debug pake nodemon
+```javascript
+"scripts": {
+    "start": "node ./{folder}",
+    "debug": "nodemon --inspect ./{folder}"
+}
+ {
+    "type": "node",
+    "request": "attach",
+    "name": "Node: Nodemon",
+    "processId": "${command:PickProcess}",
+    "restart": true,
+    "protocol": "inspector",
+},
+```
 
