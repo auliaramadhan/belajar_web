@@ -5,22 +5,18 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </nav> -->
-    <Test></Test>
-  <!-- <router-view /> -->
-  <!-- ini gunanya apa sih router view -->
+  <router-view />
   </div>
 </template>
 
 <script>
 // import Skills from "./components/Skills.vue";
-import Test from './components/Test'
 // import Users from './components/User'
 
 export default {
   name: "app",
   components: {
     // Skills
-    Test
     // Users
   }
 };
