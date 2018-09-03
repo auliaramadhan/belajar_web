@@ -5,19 +5,36 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </nav> -->
-  <router-view />
+    <TreeBrowser
+      :node="root"
+      @onClick="nodeWasClicked"
+     />
+  <!-- <router-view /> -->
   </div>
 </template>
 
 <script>
-// import Skills from "./components/Skills.vue";
+// import Skills from "./components/Skills";
 // import Users from './components/User'
+import TreeBrowser from './components/TreeBrowser';
 
 export default {
   name: "app",
   components: {
     // Skills
     // Users
+    TreeBrowser
+  },
+  data(){
+    return {
+      root: root,
+    }
+  },
+  methods: {
+    nodeWasClicked(node){
+      alert(node.name);
+      console.log('we are here again');
+    }
   }
 };
 </script>
