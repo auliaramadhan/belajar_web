@@ -5,11 +5,11 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </nav> -->
-    <TreeBrowser
+    <!-- <TreeBrowser
       :node="root"
       @onClick="nodeWasClicked"
-     />
-  <!-- <router-view /> -->
+     /> -->
+  <router-view />
   </div>
 </template>
 
@@ -56,6 +56,7 @@ html {
 }
 #app {
   width: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
   padding: 20px 20px 20px 0;
