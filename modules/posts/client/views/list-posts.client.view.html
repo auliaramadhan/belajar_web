@@ -13,7 +13,9 @@
         <span ng-if="post.user" ng-bind="post.user.displayName"></span>
         <span ng-if="!post.user">Deleted User</span>
       </small>
-      <h4 class="list-group-item-heading" ng-bind="post.name"></h4>
+      <hr>
+      <h4 class="list-group-item-heading" ng-bind="post.title"></h4>
+      <p>{{ vm.post.body | limitTo : 200}}</p>
     </a>
   </div>
   <div class="alert alert-warning text-center" ng-if="vm.posts.$resolved && !vm.posts.length">

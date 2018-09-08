@@ -1,6 +1,12 @@
 <section>
   <div class="page-header">
-    <h1 ng-bind="vm.post.name"></h1>
+    <h1>
+      <span ng-bind="vm.post.title"></span>
+      <small>{{vm.post.category}}</small>
+    </h1>
+    <div ng-bind="vm.post.body"></div>
+    <br>
+    <p>Tags : <strong>{{vm.post.tags}}</strong></p>
   </div>
   <div class="pull-right"
        ng-show="vm.post.isCurrentUserOwner">
