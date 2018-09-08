@@ -1,0 +1,101 @@
+// db.customers.insert([
+//   {
+//   first_name:'steven',
+//   last_name:'smith',},
+//   {
+//   first_name:'joan',
+//   last_name:'johansin',
+//   gender: 'female'},
+// ])
+// db.customers.update(
+//     {
+//       first_name:'john'
+//     },
+//     {
+//       first_name:'john',
+//   last_name:'doe',
+//   gender: 'male'
+//     }
+// )
+// db.customers.update(
+//     {
+//       first_name:'steven'
+//     },
+//     {
+//       $set:{gender:'male'}
+//     }
+// )//langsung update 1 value aja
+// db.customers.update(
+//     {
+//       first_name:'steven'
+//     },
+//     {
+//       $inc:{age:5}
+//     }
+// )//nambah value
+// db.customers.update(
+//     {
+//       first_name:'steven'
+//     },
+//     {
+//       $unset:{age:1}
+//     }
+// )//hapus kolom/key
+// db.customers.update(
+//     {
+//       first_name:'Mary'
+//     },
+//     {
+//       first_name:'Mary',
+//       last_name:'samson',
+//     },
+//     {
+//       upsert:true
+//     }
+// )//update tapi jika kosong insert
+// db.customers.update(
+//     {
+//       first_name:'steven'
+//     },
+//     {
+//       $rename:{'gender':'sex'}
+//     }
+// )//ganti nama kolom
+// db.customers.remove(
+//     {
+//       first_name:'steven'
+//     },
+//     {
+//       justOne:true //kalo cuma 1 yang mau dihapus
+//     }
+// )//update tapi jika kosong insert
+// db.customers.find(
+//     {
+//       $or:[
+//         {first_name:'Mary'},
+//         {gender:'male'},
+//       ]
+//     }
+// )//cari data dengan atau
+// db.customers.find(
+//     {
+//       age:{$lt:40}
+//     }
+// )//cari data kurang
+// db.customers.find(
+//     {
+//       address.city : 'boston'
+//     }
+// )//cari data yang nested
+// db.customers.find().sort(
+//     {
+//       last_name: 1 //descending order -1
+//     }
+// )//sort data
+
+// db.customers.find().count(); //hitung data
+// db.customers.find().limit(4); //limit data 
+
+// db.customers.find().forEach(function(doc){
+//   print('Customer Name : ' + doc.first_name)
+// })// custom print
