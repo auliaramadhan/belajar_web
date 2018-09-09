@@ -1,3 +1,6 @@
+
+mongod --logpath c:\MongoDB\log\mongo.log --dbpath c:\MongoDB\data\db --directoryperdb --install
+
 db.customers.insert([
   {
   first_name:'steven',
