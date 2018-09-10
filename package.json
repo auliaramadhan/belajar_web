@@ -4,8 +4,8 @@
   "description": "belajar-web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "build": "webpack --mode production --progress"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,13 @@
   "homepage": "https://github.com/auliaramadhan/belajar_web#readme",
   "dependencies": {
     "babel": "^6.23.0",
-    "node-sass": "^4.9.2",
-    "vee-validate": "^2.1.0-beta.7",
-    "vue": "^2.5.17",
-    "vue-cli": "^2.9.6"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   }
 }
