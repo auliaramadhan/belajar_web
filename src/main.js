@@ -3,7 +3,6 @@ import App from "./App.vue";
 import Veevalidate from "vee-validate";
 import router from "./router";
 import './assets/style.css';
-import markdown from '@/directives/markdown';
 
 Vue.use(Veevalidate);
 Vue.config.productionTip = false;

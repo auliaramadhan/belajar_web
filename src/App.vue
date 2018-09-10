@@ -9,6 +9,8 @@
       :node="root"
       @onClick="nodeWasClicked"
      /> -->
+
+     <!-- HARUSNYA ADA MARKDOWN TAPI BLM JADI -->
   <router-view />
   </div>
 </template>
@@ -41,6 +43,9 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: #eeeeee;
   font-family: "Montserrat", sans-serif;

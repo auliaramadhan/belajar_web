@@ -4,6 +4,8 @@ import Skills from "./components/Skills.vue";
 import About from "./components/About.vue";
 import Test from './components/Test.vue';
 import Calculator from './components/Calculator.vue';
+import markdown from '@/directives/markdown';
+
 
 Vue.use(Router);
 
