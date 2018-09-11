@@ -5,7 +5,8 @@ const express = require('express'),
      { check, validationResult } = require('express-validator/check'),
      mongojs = require('mongojs'),
      db = mongojs('customerapp', ['users']),
-     app = express()
+     app = express(),
+     ObjectId = mongojs.ObjectID;
 
 
 // let logger = (req, res, next) => {
@@ -103,6 +104,18 @@ app.post('/users/add', [
 //     console.log(newUser);
 // })
 
+app.delete('/users/delete/:id', (req, res) =>{
+    console.log(req.params.id);
+    db.users.remove({
+        _id:ObjectId(req.params.id)
+    }, (err) => {
+        if (err) {
+            console.log(err);
+        } res.redirect('/')
+    })
+})
+
 app.listen(3000, () => {
     console.log('server strarted on port  3000');
 })
+
