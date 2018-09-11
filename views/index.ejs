@@ -1,0 +1,33 @@
+<% %>
+<% include partials/header %>
+<h1>
+  <%= title %>
+</h1>
+  <ul>
+    <% for (error in errors) {%>
+    <li>
+    	<% errors.error %>
+    </li>
+    <%  } %>
+  </ul>
+<form method="POST" action="/users/add">
+  <label for="">name</label>
+  <input type="text" name="name">
+  <br>
+  <label for="">email</label>
+  <input type="text" name="email">
+  <br>
+  <label for="">age</label>
+  <input type="text" name="age">
+  <br>
+  <input type="submit" value="submit">
+</form>
+<% users.forEach( (user)=> { %>
+  <li>
+    <%= user.name %>
+    <%= user.email %>
+    <%= user.age %>
+  </li>
+<% }) %>
+
+<% include partials/footer %>
