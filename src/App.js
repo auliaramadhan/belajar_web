@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './Components/Project';
+import Todos from './Components/Todos';
 import AddProject from './Components/AddProject';
 import './App.css';
 import uuid from 'uuid';
@@ -10,6 +11,7 @@ class App extends Component {
     super()
     this.state = {
       projects: [],
+      todos :[]
     }
   }
 
@@ -82,9 +84,11 @@ class App extends Component {
         <Projects test="Hello world"
           projects={this.state.projects}
           onDelete={this.handleDeleteProject.bind(this)} />
+      <Todos todos={this.state.todos}/>
       </div>
     );
   }
 }
+
 
 export default App;
