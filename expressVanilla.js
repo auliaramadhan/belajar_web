@@ -58,7 +58,6 @@ app.get('/', (req, res) => {
     // res.send('Hello Woorld')
     // res.json(person)
     db.users.find(function (err, docs) {
-        console.log(docs);
         res.render('index', {
             title: 'Customer',
             users: docs
@@ -89,22 +88,13 @@ app.post('/users/add', [
         email: req.body.email,
         age: req.body.age
     }
-    console.log(newUser);
     db.users.insert(newUser, (err) =>{
         err ? console.log(err) : res.redirect('/')
+        // res.send(req.body);
     })
 });
-// (req, res) =>{
-//     console.log(req.body.name);
-//     const newUser = {
-//         name: req.body.name,
-//         email: req.body.email,
-//         age : req.body.age
-//     }
-//     console.log(newUser);
-// })
 
-app.delete('/users/delete/:id', (req, res) =>{
+app.get('/users/delete/:id', (req, res) =>{
     console.log(req.params.id);
     db.users.remove({
         _id:ObjectId(req.params.id)
