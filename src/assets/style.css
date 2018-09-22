@@ -1,6 +1,6 @@
 body{
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fcadb 51%, #2cb5e6 75%);
-  height: 2000px;
+  /* background: linear-gradient(141deg, #0fb8ad 0%, #1fcadb 51%, #2cb5e6 75%); */
+  height: 100%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

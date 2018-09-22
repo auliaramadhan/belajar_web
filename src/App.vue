@@ -4,8 +4,8 @@
     <!-- <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-    </nav> -->
-    <!-- <TreeBrowser
+    </nav>
+    <TreeBrowser
       :node="root"
       @onClick="nodeWasClicked"
      /> -->
@@ -46,7 +46,7 @@ export default {
 *{
   box-sizing: border-box;
 }
-body {
+/* body {
   background-color: #eeeeee;
   font-family: "Montserrat", sans-serif;
   display: grid;
@@ -74,6 +74,6 @@ nav a {
   color: rgb(0, 110, 255);
   font-weight: bold;
   margin-right: 15px;
-}
+} */
 </style>
 

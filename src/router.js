@@ -4,6 +4,7 @@ import Skills from "./components/Skills.vue";
 import About from "./components/About.vue";
 import Test from './components/Test.vue';
 import Calculator from './components/Calculator.vue';
+import Statex from './components/Statex.vue';
 import markdown from '@/directives/markdown';
 
 
@@ -30,6 +31,11 @@ export default new Router({
       path: "/calculator",
       name: "calc",
       component: Calculator
+    },
+    {
+      path: "/vuestate",
+      name: "state",
+      component: Statex
     }
   ]
 });
