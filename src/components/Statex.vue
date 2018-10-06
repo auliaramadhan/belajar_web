@@ -3,7 +3,7 @@
     <div class="left">
       <h1>{{title}}</h1>
       <form @submit.prevent="addLink">
-        <input class="link-input" type="text" placeholder="Add a Link" v-model="newLink" />
+        <input class="link-input" type="text" placeholder="Add a Link" v-model="newLink" @input="cek($event.target.value)" />
       </form>
       <ul>
         <li v-for="(link, index) in links" :key="index">
@@ -52,6 +52,9 @@ export default {
     removeLinks: function(link) {    // Add this
       console.log('link');
       this.removeLink(link)
+    },
+    cek: function(e) {
+      console.log(e);
     }
   }
 };
