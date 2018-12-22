@@ -1,4 +1,3 @@
-import './Components/css/AppPost.css'
 import React, { Component } from 'react';
 import Navbar from './Components/postList/Navbar'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
@@ -6,6 +5,7 @@ import Home from './Components/postList/Home'
 import About from './Components/postList/About'
 import Contact from './Components/postList/Contact'
 import Post from './Components/postList/Post'
+import './Components/css/AppPost.css'
 
 class App extends Component {
   render() {
