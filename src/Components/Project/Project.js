@@ -10,7 +10,6 @@ class Projects extends Component {
   console.log(this.props.projects);
   if (this.props.projects) {
     projectItems = this.props.projects.map(project => {
-      // console.log(project);
       return(
         <ProjectItem project = {project} 
         key={project.id}
@@ -26,10 +25,5 @@ class Projects extends Component {
     );
   }
 }
-
-// Projects.propTypes = {
-//   projects: React.propTypes.array,
-//   onDelete : React.propTypes.func
-// }
 
 export default Projects;

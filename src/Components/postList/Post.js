@@ -5,7 +5,7 @@ import { deletePost } from '../../actions/postActions'
 class Post extends Component {
   handleClick = () => {
     this.props.deletePost(this.props.post.id);
-    this.props.history.push('/');
+    this.props.history.push('/post');
   }
   render() {
 
